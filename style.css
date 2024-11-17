@@ -1,0 +1,122 @@
+body{
+    background-color:lightgray;
+}
+
+
+span{
+    font-size: 17px;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+.red{
+
+    
+     width: 150px;
+     height: 700px;
+    display:inline-block;
+    background-color: rgb(147, 221, 224);
+    margin: auto;
+    padding:90px;
+    padding-top: 140px;
+    padding-bottom: 120px;
+    padding-top: 14px;
+    box-shadow: 0px 4px 8px black;
+border-radius: 40px;
+}
+
+pre:hover{
+  
+        color: lightgoldenrodyellow;
+    }
+
+ ul li{
+    list-style-type: none;
+}
+li:hover{
+    color: lightgoldenrodyellow;
+    font-size: x-large;
+}
+
+h2 {
+    text-decoration: underline;
+}
+h1{
+    text-decoration: underline;
+   
+}
+h1:hover{
+    color: lightcoral;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+h2:hover{
+    color: lightyellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.yellow{
+    
+    display: inline-block;
+    background-color: gray;
+    margin: 0 auto;
+    padding:23px;
+    width: 450px;
+    text-align: left;
+    box-shadow: 0  4px 8px black;
+    border-radius: 45px;
+     
+}
+span:hover{
+    color: lightgoldenrodyellow;
+}
+
+img{
+    width: 85%;
+    border-radius: 200px;;
+}
+.orange{
+  box-shadow: 4px 4px 4px 4px rgb(122, 121, 121);
+  text-align: center;
+  padding: 100px;  
+}
+
+button{
+    height: 40px;
+    width: 250px;
+    border-radius: 11px;
+    background-image: linear-gradient(rgb(119, 235, 177),rgb(86, 245, 72));
+    text-align: center;
+    margin: 0 auto;
+
+}
+button:hover{
+    background-image: linear-gradient(rgb(190, 248, 216),rgb(41, 173, 48));
+}
+
+section{
+    background-color: aliceblue;
+    border: 2px solid blue;
+  height: 25px;
+    width: 200px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(119, 165, 235),rgb(72, 234, 245));
+    text-align: center;
+   
+
+}
+.Resume{
+    text-align: center;
+}
+
+button:hover{
+ box-shadow: 0cm;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: brown;
+}
+.sec:hover{
+    box-shadow: 0cm;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+}
