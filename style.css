@@ -1,122 +1,239 @@
-body{
-    background-color:lightgray;
+/* General Body Styling */
+body {
+    background-color:  rgb(30, 00, 210);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-span{
+/* General styling for span and h1 */
+span {
     font-size: 17px;
 }
 
-h1{
+h1 {
     font-size: 45px;
     text-align: center;
 }
 
-.red{
+/* Resume section */
+.Resume {
+    text-align: center;
+}
 
-    
-     width: 150px;
-     height: 700px;
-    display:inline-block;
+/* Red section */
+.red {
+    width: 150px;
+    height: auto;
+    display: inline-block;
     background-color: rgb(147, 221, 224);
-    margin: auto;
-    padding:90px;
-    padding-top: 140px;
-    padding-bottom: 120px;
-    padding-top: 14px;
+    margin: 10px auto;
+    padding: 20px;
     box-shadow: 0px 4px 8px black;
-border-radius: 40px;
+    border-radius: 40px;
 }
 
-pre:hover{
-  
-        color: lightgoldenrodyellow;
-    }
+.red img {
+    width: 85%;
+    border-radius: 50%;
+}
 
- ul li{
+pre:hover {
+    color: lightgoldenrodyellow;
+}
+
+ul li {
     list-style-type: none;
+    padding-right: 30px;
+    word-spacing: 20px;
+
 }
-li:hover{
+
+#p-1:hover{
+    color: lightgoldenrodyellow;
+    text-shadow:10px salmon;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li:hover {
     color: lightgoldenrodyellow;
     font-size: x-large;
+    letter-spacing: 1px;
 }
 
-h2 {
+h2, h1 {
     text-decoration: underline;
 }
-h1{
-    text-decoration: underline;
-   
-}
-h1:hover{
+
+h1:hover {
     color: lightcoral;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h2:hover{
+
+h2:hover {
     color: lightyellow;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.yellow{
-    
+
+/* Yellow Section */
+.yellow {
     display: inline-block;
     background-color: gray;
-    margin: 0 auto;
-    padding:23px;
+    margin: 20px auto;
+    padding: 23px;
     width: 450px;
     text-align: left;
-    box-shadow: 0  4px 8px black;
+    box-shadow: 0 4px 8px black;
     border-radius: 45px;
-     
 }
+.yellow:hover{
+    background-color: aqua;
+    box-shadow: 15 15px 15px red;
+
+
+}
+
+
+
+
 span:hover{
     color: lightgoldenrodyellow;
 }
 
-img{
-    width: 85%;
-    border-radius: 200px;;
-}
-.orange{
-  box-shadow: 4px 4px 4px 4px rgb(122, 121, 121);
-  text-align: center;
-  padding: 100px;  
-}
-
-button{
+button {
     height: 40px;
     width: 250px;
     border-radius: 11px;
-    background-image: linear-gradient(rgb(119, 235, 177),rgb(86, 245, 72));
+    background-image: linear-gradient(rgb(119, 235, 177), rgb(86, 245, 72));
     text-align: center;
     margin: 0 auto;
-
-}
-button:hover{
-    background-image: linear-gradient(rgb(190, 248, 216),rgb(41, 173, 48));
 }
 
-section{
+button:hover {
+    background-image: linear-gradient(rgb(190, 248, 216), rgb(41, 173, 48));
+}
+
+section {
     background-color: aliceblue;
     border: 2px solid blue;
-  height: 25px;
+    height: 25px;
     width: 200px;
     border-radius: 10px;
-    background-image: linear-gradient(rgb(119, 165, 235),rgb(72, 234, 245));
-    text-align: center;
-   
-
-}
-.Resume{
+    background-image: linear-gradient(rgb(119, 165, 235), rgb(72, 234, 245));
     text-align: center;
 }
 
-button:hover{
- box-shadow: 0cm;
- font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- color: brown;
+/* Section that holds the credits text */
+.sec {
+    background-color: aliceblue;
+    border: 2px solid blue;
+    height: 25px;
+    width: 200px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(119, 165, 235), rgb(72, 234, 245));
+    text-align: center;
+    margin-top: 30px;
 }
-.sec:hover{
+
+/* Make particles background responsive */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 300%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, #0e0e0d, #0707eb, #757373, #e105da);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+/* Button Hover Styles */
+button:hover {
     box-shadow: 0cm;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: brown;
+}
+
+.sec:hover {
+    box-shadow: 0cm;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: brown;
+}
+
+/* Responsive Styles (Mobile-first) */
+@media (max-width: 768px) {
+    .yellow {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .red {
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 200px;
+        font-size: 16px;
+    }
+
+    span {
+        font-size: 14px;
+    }
+
+    img {
+        width: 70%;
+        border-radius: 50%;
+    }
+}
+#h-1{
+    font-size: x-large;
+}
+/* Styles for smaller devices (phones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .yellow {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .red {
+        width: 70%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    button {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 13px;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .yellow {
+        width: 90%;
+        padding: 10px;
+    }
 }
